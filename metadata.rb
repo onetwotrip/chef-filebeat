@@ -8,11 +8,8 @@ version '0.2.7'
 source_url 'https://github.com/vkhatri/chef-filebeat' if respond_to?(:source_url)
 issues_url 'https://github.com/vkhatri/chef-filebeat/issues' if respond_to?(:issues_url)
 
-depends 'windows'
-depends 'powershell'
 depends 'apt'
-depends 'yum'
 
-%w(windows ubuntu centos amazon redhat fedora).each do |os|
+%w( ubuntu ).each do |os|
   supports os
 end
